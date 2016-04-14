@@ -39,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
 /*        EditText edtView=(EditText)findViewById(R.id.editTextConvertValue);
         edtView.setInputType(InputType.TYPE_NULL);*/
 
-        View view = this.getCurrentFocus();
+/*        View view = this.getCurrentFocus();
         if (view != null) {
             InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-        }
+        }*/
 
         mAddButton.setOnClickListener(new View.OnClickListener() {
             @Override

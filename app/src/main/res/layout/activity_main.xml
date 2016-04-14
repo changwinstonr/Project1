@@ -12,7 +12,7 @@
         android:background="#4D9494"
         android:layout_alignParentTop="true"
         android:textSize="12sp"
-        android:paddingBottom="200dp"/>
+        android:paddingBottom="120dp"/>
 
  <!--   <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
