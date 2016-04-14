@@ -18,7 +18,7 @@
         android:layout_height="match_parent"
         android:id="@+id/rv" />-->
 
-<!--    <EditText
+    <EditText
     android:layout_width="150dp"
     android:layout_height="wrap_content"
     android:id="@+id/editText"
@@ -27,16 +27,16 @@
     android:hint="Enter List Name"
     android:gravity="center"
     android:layout_alignBottom="@id/listView"
-    android:layout_alignParentBottom="true"/>-->
+    android:layout_alignParentBottom="true"/>
 
-    <EditText
-        android:id="@+id/editTextR"
+<!--    <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <requestFocus />
 
-    </EditText>
+    </EditText>-->
 
     <Button
         android:layout_width="wrap_content"

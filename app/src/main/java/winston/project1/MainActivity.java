@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.LinkedList;
+
+/*import java.util.LinkedList;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -79,7 +81,7 @@ public class MainActivity extends extends AppCompatActivity {
 
             }
         });
-    }
+    }*/
 
 public class MainActivity extends AppCompatActivity {
     LinkedList<String> mStringList;
