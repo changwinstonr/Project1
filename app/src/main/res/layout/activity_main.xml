@@ -10,8 +10,9 @@
         android:layout_height="fill_parent"
         android:id="@+id/listView"
         android:background="#4D9494"
-        android:layout_alignParentTop="true">
-    </ListView>
+        android:layout_alignParentTop="true"
+        android:textSize="12sp"
+        android:paddingBottom="200dp"/>
 
  <!--   <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
@@ -25,9 +26,15 @@
     android:layout_centerHorizontal="true"
     android:layout_marginTop="80dp"
     android:hint="Enter List Name"
+    android:background="#FFFFFF"
     android:gravity="center"
     android:layout_alignBottom="@id/listView"
-    android:layout_alignParentBottom="true"/>
+    android:layout_alignParentBottom="true"
+    android:imeOptions="actionDone"/>
+<!--        <requestFocus />
+    </EditText>-->
+
+
 
 <!--    <EditText
         android:id="@+id/editText"
