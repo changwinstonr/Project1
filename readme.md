@@ -1,15 +1,15 @@
 #Project 1
 by Winston Chang
 
-Text
+---
+##Mission - Basic
+Create a List of Lists. Which can be added to. Opening a list will reveal a list which can be added to.
 
-Placeholder
+##Mission - Bonus
+Add: 
+Sort Alpha | Long-click remove | Check box | List Item Description | 
 
-Placeholder
-
-Placeholder
-
-Placeholder
+##Prototyping
 
 ![Home](screenshots/home_.png)
 ![Home](screenshots/home_addList_.png)
