@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="winston.project1.ListActivity">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listViewWithin"
+        android:background="#4d946e"
+        android:layout_alignParentTop="true"
+        android:textSize="12sp"
+        android:paddingBottom="200dp"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:hint="Enter List Name"
+        android:background="#FFFFFF"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="text"
+        android:gravity="center"
+        android:layout_alignBottom="@id/listViewWithin"
+        android:layout_alignParentBottom="true"
+        android:imeOptions="actionDone"/>
+
+</RelativeLayout>

@@ -28,25 +28,12 @@
     android:hint="Enter List Name"
     android:background="#FFFFFF"
     android:maxLines="1"
-    android:maxLength="20"
+    android:maxLength="10"
     android:inputType="text"
     android:gravity="center"
     android:layout_alignBottom="@id/listView"
     android:layout_alignParentBottom="true"
     android:imeOptions="actionDone"/>
-<!--        <requestFocus />
-    </EditText>-->
-
-
-
-<!--    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <requestFocus />
-
-    </EditText>-->
 
     <Button
         android:layout_width="wrap_content"
