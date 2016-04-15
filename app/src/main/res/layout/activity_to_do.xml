@@ -45,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnAddToList"
-        android:text="Add"
+        android:text="Add Item"
         android:textColor="#23971f"
         android:layout_alignBottom="@+id/editText"
         android:layout_toEndOf="@+id/editText" />
