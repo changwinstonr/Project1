@@ -1,6 +1,7 @@
 package winston.project1;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
@@ -60,6 +61,14 @@ public class MainActivity extends AppCompatActivity {
                 mStringList.remove(position);
                 mAdapter.notifyDataSetChanged();
                 return true;
+            }
+        });
+
+        listName.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent todolist = new Intent(MainActivity.this, ToDoActivity.class);
+                startActivity(todolist);
             }
         });
 
