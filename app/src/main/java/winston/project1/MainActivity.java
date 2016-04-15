@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.LinkedList;
 
@@ -46,11 +47,15 @@ public class MainActivity extends AppCompatActivity {
         mAddButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String input = mEditText.getText().toString();
+
                 if (input.length() > 0) {
                     mStringList.add(input);
                     mAdapter.notifyDataSetChanged();
                     mEditText.setText("");
+                } else{
+                    Toast.makeText(getApplicationContext(), "No Entry Found", Toast.LENGTH_LONG).show();
                 }
             }
         });

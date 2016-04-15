@@ -5,10 +5,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="winston.project1.ToDoActivity">
+    <!--<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/barstool"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>-->
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/listView"
+        android:id="@+id/listViewLists"
         android:background="#4d946e"
         android:layout_alignParentTop="true"
         android:textSize="12sp"
@@ -23,7 +35,7 @@
         android:hint="What to do?"
         android:background="#FFFFFF"
         android:maxLines="1"
-        android:maxLength="10"
+        android:maxLength="15"
         android:inputType="text"
         android:gravity="center"
         android:layout_alignTop="@id/listView"
@@ -32,10 +44,19 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/addTextButton"
+        android:id="@+id/btnAddToList"
         android:text="Add"
         android:textColor="#23971f"
         android:layout_alignBottom="@+id/editText"
         android:layout_toEndOf="@+id/editText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Limit: 15 characters)"
+        android:textSize="9sp"
+        android:id="@+id/textView"
+        android:layout_below="@id/editText"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
