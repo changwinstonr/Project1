@@ -34,8 +34,8 @@ public class ToDoActivity extends AppCompatActivity {
 
         mEditText = (EditText) findViewById(R.id.editText);
         //textView = (TextView) findViewById(R.id.textView);
-        String position = getIntent().getStringExtra("Previous List"); //supposed to point to previous point. Need to investigate Intents and Extras.
-        //textView.setText(String.valueOf(positionWithName));
+        String pos = getIntent().getStringExtra("Previous List"); //supposed to point to previous point. Need to investigate Intents and Extras.
+        //textView.setText(String.valueOf(pos));
 
         mStringList = new LinkedList<>();
 
