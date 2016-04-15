@@ -40,11 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mEditText = (EditText) (findViewById(R.id.editText));
         mAddButton = (Button) (findViewById(R.id.addTextButton));
 
-        View view = this.getCurrentFocus();
-  /*      if (view != null) {
-            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
-        }*/
+
 
         mAddButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+
+
 /*        mEditText = (EditText) findViewById(R.id.done);
         mEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -68,5 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 return handled;
             }
-    }*/
+    */
+
+    }
 }
