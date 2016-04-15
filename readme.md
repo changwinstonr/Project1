@@ -5,11 +5,7 @@ by Winston Chang
 ##Mission - Basic
 Create a List of Lists. Which can be added to. Opening a list will reveal a list which can be added to.
 
-##Mission - Bonus 
-- Alpha Sort
-- Long-click remove
-- Check box
-- List Item Description 
+
 
 ##Prototyping
 
