@@ -32,7 +32,7 @@ public class ToDoActivity extends AppCompatActivity {
 
         mEditText = (EditText) findViewById(R.id.editText);
         //textView = (TextView) findViewById(R.id.textView);
-        String positionWithName = getIntent().getStringExtra("Previous List");
+        String position = getIntent().getStringExtra("Previous List");
         //textView.setText(String.valueOf(positionWithName));
 
         mStringList = new LinkedList<>();
