@@ -4,13 +4,16 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.LinkedList;
 
@@ -36,13 +39,11 @@ public class MainActivity extends AppCompatActivity {
         listName.setAdapter(mAdapter);
         mEditText = (EditText) (findViewById(R.id.editText));
         mAddButton = (Button) (findViewById(R.id.addTextButton));
-/*        EditText edtView=(EditText)findViewById(R.id.editTextConvertValue);
-        edtView.setInputType(InputType.TYPE_NULL);*/
 
-/*        View view = this.getCurrentFocus();
-        if (view != null) {
+        View view = this.getCurrentFocus();
+  /*      if (view != null) {
             InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
         }*/
 
         mAddButton.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +57,16 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-    }
+/*        mEditText = (EditText) findViewById(R.id.done);
+        mEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                boolean handled = false;
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    mStringList();
+                    handled = true;
+                }
+                return handled;
+            }
+    }*/
 }

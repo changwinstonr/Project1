@@ -12,7 +12,7 @@
         android:background="#4D9494"
         android:layout_alignParentTop="true"
         android:textSize="12sp"
-        android:paddingBottom="120dp"/>
+        android:paddingTop="120dp"/>
 
  <!--   <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
@@ -25,14 +25,13 @@
     android:id="@+id/editText"
     android:layout_centerHorizontal="true"
     android:layout_marginTop="80dp"
-    android:hint="Enter List Name"
+    android:hint="What to do?"
     android:background="#FFFFFF"
     android:maxLines="1"
     android:maxLength="10"
     android:inputType="text"
     android:gravity="center"
-    android:layout_alignBottom="@id/listView"
-    android:layout_alignParentBottom="true"
+    android:layout_alignTop="@id/listView"
     android:imeOptions="actionDone"/>
 
     <Button
@@ -41,10 +40,8 @@
         android:id="@+id/addTextButton"
         android:text="Add"
         android:textColor="#23971f"
-        android:layout_marginLeft="70dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toEndOf="@+id/editText" />
 
 
 </RelativeLayout>
