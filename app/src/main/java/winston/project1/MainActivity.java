@@ -54,7 +54,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        listName.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                mStringList.remove(position);
+                mAdapter.notifyDataSetChanged();
+                return true;
+            }
+        });
 
 
 /*        mEditText = (EditText) findViewById(R.id.done);
