@@ -18,7 +18,7 @@ import java.util.LinkedList;
 
 public class ToDoActivity extends AppCompatActivity {
 
-    LinkedList<String> mStringList;
+    LinkedList<String> mStringList; //declaring these
     ArrayAdapter<String> mAdapter;
     EditText mEditText;
     Button mAddButton;
@@ -28,11 +28,11 @@ public class ToDoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_to_do);
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.barstool);
-        setSupportActionBar(barstool);*/
+        setSupportActionBar(barstool);*/ //this feature was drunk
 
         mEditText = (EditText) findViewById(R.id.editText);
         //textView = (TextView) findViewById(R.id.textView);
-        String position = getIntent().getStringExtra("Previous List");
+        String position = getIntent().getStringExtra("Previous List"); //supposed to point to previous point. Need to investigate Intents and Extras.
         //textView.setText(String.valueOf(positionWithName));
 
         mStringList = new LinkedList<>();
@@ -43,7 +43,7 @@ public class ToDoActivity extends AppCompatActivity {
 
         listView.setAdapter(mAdapter);
 
-        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() { //Long press
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 mStringList.remove(position);
@@ -55,7 +55,7 @@ public class ToDoActivity extends AppCompatActivity {
 
 
         mAddButton = (Button) findViewById(R.id.btnAddToList);
-        mAddButton.setOnClickListener(new View.OnClickListener() {
+        mAddButton.setOnClickListener(new View.OnClickListener() {  //Short press; "On(Short)Click"
             @Override
             public void onClick(View view) {
 
@@ -63,7 +63,7 @@ public class ToDoActivity extends AppCompatActivity {
 
                 if (input.length() >0) {
                     mStringList.add(input);
-                    mAdapter.notifyDataSetChanged();
+                    mAdapter.notifyDataSetChanged();    //important to tell the list that it is being updated
                     mEditText.setText("");
                 }
             }

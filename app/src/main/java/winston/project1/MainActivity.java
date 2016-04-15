@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                     mAdapter.notifyDataSetChanged();
                     mEditText.setText("");
                 } else{
-                    Toast.makeText(getApplicationContext(), "No Entry Found", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "No Entry Found", Toast.LENGTH_LONG).show();    //should created buttered toast when no input detected on Add press
                 }
             }
         });
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+//supposedly alters the soft-keyboard's 'return' into 'Done'. Aimed to remove the need for an Add button and hide the keyboard after input.
 /*        mEditText = (EditText) findViewById(R.id.done);
         mEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
