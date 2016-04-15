@@ -5,30 +5,37 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="winston.project1.ToDoActivity">
-
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/listViewWithin"
+        android:id="@+id/listView"
         android:background="#4d946e"
         android:layout_alignParentTop="true"
         android:textSize="12sp"
-        android:paddingBottom="200dp"/>
+        android:paddingTop="120dp"/>
 
     <EditText
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextList"
+        android:id="@+id/editText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:hint="Enter List Name"
+        android:hint="What to do?"
         android:background="#FFFFFF"
         android:maxLines="1"
         android:maxLength="10"
         android:inputType="text"
         android:gravity="center"
-        android:layout_alignBottom="@id/listViewWithin"
-        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/listView"
         android:imeOptions="actionDone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addTextButton"
+        android:text="Add"
+        android:textColor="#23971f"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toEndOf="@+id/editText" />
 
 </RelativeLayout>
